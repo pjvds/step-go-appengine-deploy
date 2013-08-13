@@ -1,0 +1,3 @@
+name: appengine-deploy
+version: 0.0.1-dev
+description: Deploy your software to Google's AppEngine
