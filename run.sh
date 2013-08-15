@@ -14,6 +14,6 @@ debug "using password: $(cat $WERCKER_STEP_TEMP/password)"
 cd $WERCKER_SOURCE_DIR
 
 debug 'Starting deployment'
-appcfg.py update ./ --email="$WERCKER_APPENGINE-DEPLOY_EMAIL" --passin < "$WERCKER_STEP_TEMP/password"
+appcfg.py update ./ --email="$WERCKER_APPENGINE_DEPLOY_EMAIL" --passin < "$WERCKER_STEP_TEMP/password"
 
 success 'Finished'
