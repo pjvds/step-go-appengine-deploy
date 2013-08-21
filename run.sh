@@ -9,8 +9,6 @@ export PATH="$PATH:$(pwd)/go_appengine"
 
 echo "$WERCKER_APPENGINE_DEPLOY_PASSWORD" > "$WERCKER_STEP_TEMP/password"
 
-debug "using password: $(cat $WERCKER_STEP_TEMP/password)"
-
 cd $WERCKER_SOURCE_DIR
 
 debug 'Starting deployment'
